@@ -1,0 +1,5 @@
+Have Code for all the complete Pages
+In this have 5 web Pages
+pages should use jsx file because using this file we can code both html and js in one file
+jsx is react file format
+
