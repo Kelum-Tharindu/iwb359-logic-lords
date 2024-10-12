@@ -18,12 +18,13 @@ body
 
 .login-container
 {
-    width: 500px;
-    background: #043082;
-    border: 2px solid rgba(255, 255, 255, 2.0);
-    color: white;
+    background-color: #003366; 
+    padding: 30px;
     border-radius: 12px;
-    padding: 30px 40px; 
+    width: 320px;
+    margin: 100px auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 .login-container h2
 {
@@ -42,8 +43,9 @@ body
 {
     width: 90%;
     padding: 10px;
-    background: transparent;
-    border: none;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #fff;
     outline: none;
     border: none;
     border-radius: 25px;
@@ -53,7 +55,7 @@ body
 }
 .input-group input::placeholder
 {
-    color: white;
+    color: black;
     font-weight: 500;
 }
 .login-container button
@@ -76,4 +78,13 @@ button:hover
     color: #fff;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     transform: scale(1.05);
+}
+label
+{
+    display: block;
+    text-align: left;
+    margin-left: 10%;
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 14px;
 }
