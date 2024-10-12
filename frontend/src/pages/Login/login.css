@@ -1,10 +1,40 @@
-.login-container
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+body
 {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 40vh;
-    background-color: #f5f5f5;
-  
+    min-height: 100vh;
+    backdrop-filter: blur(2px) brightness(75%);
+    background-size: cover;
+    background-position: center;  
+}
+
+.login-container
+{
+    width: 500px;
+    background: #043082;
+    border: 2px solid rgba(255, 255, 255, 2.0);
+    color: white;
+    border-radius: 12px;
+    padding: 30px 40px; 
+}
+.login-container h2
+{
+    color: black;
+    font-size: 36px;
+    text-align: center;
+}
+.login-container.input-group
+{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
 }
