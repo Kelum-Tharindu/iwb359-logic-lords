@@ -7,7 +7,7 @@ import DashBord from './pages/DashBoard/DashBord';
 import CreateBusinessCard from './pages/CreateBusinessCard/CreateBusinessCard';
 import ViewBusinessCard from './pages/ViewBusinessCard/ViewBusinessCard';
 import ErrorPage from './pages/PageNotFound/ErrorPage';
-import { NavBar } from './Components/NavBar1/NavBar'; // Adjust according to your export
+import { NavBar } from './Components/NavBar1/navBar'; // Adjust according to your export
 
 function App() {
   const location = useLocation(); // Get the current location
