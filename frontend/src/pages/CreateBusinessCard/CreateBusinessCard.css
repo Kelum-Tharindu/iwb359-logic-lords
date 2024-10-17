@@ -111,7 +111,6 @@
     margin-bottom: 10px;
   }
   
-  /* Ensure proper spacing for business hours inputs */
   .business-hours-section input[type="text"] {
     width: 100%;
     padding: 10px;

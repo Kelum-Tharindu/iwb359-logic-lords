@@ -19,8 +19,8 @@ const UserProfile = () => {
     email: '',
     linkedin: '',
     description: '',
-    profilePicture: null, // To store the profile picture
-    coverPicture: null,   // To store the cover picture
+    profilePicture: null, 
+    coverPicture: null,   
     businessHours: {
       sunday: '',
       monday: '',
