@@ -1,6 +1,4 @@
-import React from "react";
-import './pages/view.css'; // Assuming you have a CSS file for styling
-
+import React, { useState } from 'react';
 // Main App Component
 const App = () => {
   return (
