@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+
 import './CreateBusinessCard.css'; 
 
 const App = () => {
@@ -19,8 +20,10 @@ const UserProfile = () => {
     email: '',
     linkedin: '',
     description: '',
-    profilePicture: null, 
-    coverPicture: null,   
+
+    profilePicture: null, // To store the profile picture
+    coverPicture: null,   // To store the cover picture
+
     businessHours: {
       sunday: '',
       monday: '',
@@ -292,3 +295,5 @@ const UserProfile = () => {
 };
 
 export default App;
+
+

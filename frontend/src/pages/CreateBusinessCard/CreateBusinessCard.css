@@ -8,8 +8,7 @@
   }
   
   .profile-section {
-    margin-left: 50px;;
-    margin-bottom: 30px;
+   margin-left: 50px;
   }
   
   h2, h3 {
@@ -87,11 +86,11 @@
   
   /* Save button */
   .save-btn {
-    width: 100%;
+       width: 100%;
     background-color: #4CAF50;
     color: white;
     padding: 10px;
-    border: none;
+     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
@@ -112,6 +111,7 @@
     margin-bottom: 10px;
   }
   
+
   .business-hours-section input[type="text"] {
     width: 100%;
     padding: 10px;
@@ -120,7 +120,7 @@
     border-radius: 5px;
   }
   
-  /* Contact info */
+
   .contact-info p {
     margin: 5px 0;
     color: #666;
