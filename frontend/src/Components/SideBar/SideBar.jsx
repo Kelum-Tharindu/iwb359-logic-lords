@@ -28,10 +28,10 @@ const Sidebar = ({ children }) => {
     ];
 
     return (
-        <div className="container">
-            <div style={{ width: isOpen ? "200px" : "50px" }} className="sidebar">
+        <div className="containersidebar">
+            <div style={{ width: isOpen ? "200px" : "50px",zIndex:100,backgroundColor:'white' }} className="sidebar">
                 <div className="top_section">
-                    <h1 style={{ display: isOpen ? "block" : "none" }} className="logo"></h1>
+                    {/* <h1 style={{ display: isOpen ? "block" : "none" }} className="logo"></h1> */}
                     <div style={{ marginLeft: isOpen ? "120px" : "0px", display: "flex" }} className="bars">
                         {/* Conditionally render FaBars or FaTimes based on isOpen */}
                         {isOpen ? <FaTimes onClick={toggle} /> : <FaBars onClick={toggle} />}

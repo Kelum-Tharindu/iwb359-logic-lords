@@ -1,16 +1,5 @@
 import React, { useState } from 'react';
-
 import './CreateBusinessCard.css'; 
-
-const App = () => {
-  return (
-    <div className="container">
-      <UserProfile />
-      {/* <Services /> */}
-      {/* <MakeAppointment /> */}
-    </div>
-  );
-};
 
 const UserProfile = () => {
   const [profile, setProfile] = useState({
@@ -89,7 +78,8 @@ const UserProfile = () => {
   };
 
   // Handle save action (insert data)
-  const handleInsert = () => {
+  const handleInsert = (e) => {
+    e.preventDefault(); // Prevent form submission or page reload
     if (profile.name && profile.phone && profile.email) {
       setIsDataInserted(true);
       console.log('Profile data inserted:', profile);
@@ -144,156 +134,156 @@ const UserProfile = () => {
           <h2>Enter Your Profile Information</h2>
 
           {/* Cover Picture Upload */}
-          <label>Cover Picture:</label>
-          <input
-            type="file"
-            accept="image/*"
-            onChange={handleCoverChange}
-          />
-          {profile.coverPicture && (
-            <img
-              src={profile.coverPicture}
-              alt="Cover Preview"
-              className="cover-picture-preview"
+          <form onSubmit={handleInsert}>
+            <label>Cover Picture:</label>
+            <input
+              type="file"
+              accept="image/*"
+              onChange={handleCoverChange}
             />
-          )}
-          <br />
+            {profile.coverPicture && (
+              <img
+                src={profile.coverPicture}
+                alt="Cover Preview"
+                className="cover-picture-preview"
+              />
+            )}
+            <br />
 
-          {/* Profile Picture Upload */}
-          <label>Profile Picture:</label>
-          <input
-            type="file"
-            accept="image/*"
-            onChange={handlePictureChange}
-          />
-          {profile.profilePicture && (
-            <img
-              src={profile.profilePicture}
-              alt="Profile Preview"
-              className="profile-picture-preview"
+            {/* Profile Picture Upload */}
+            <label>Profile Picture:</label>
+            <input
+              type="file"
+              accept="image/*"
+              onChange={handlePictureChange}
             />
-          )}
-          <br />
+            {profile.profilePicture && (
+              <img
+                src={profile.profilePicture}
+                alt="Profile Preview"
+                className="profile-picture-preview"
+              />
+            )}
+            <br />
 
-          <label>Name:</label>
-          <input
-            type="text"
-            name="name"
-            value={profile.name}
-            onChange={handleChange}
-            required
-          />
-          <br />
-          <label>Role:</label>
-          <input
-            type="text"
-            name="role"
-            value={profile.role}
-            onChange={handleChange}
-          />
-          <br />
-          <label>Description:</label>
-          <textarea
-            name="description"
-            value={profile.description}
-            onChange={handleChange}
-          />
-          <br />
-          <label>Phone (required):</label>
-          <input
-            type="text"
-            name="phone"
-            value={profile.phone}
-            onChange={handleChange}
-            required
-          />
-          <br />
-          <label>Email (required):</label>
-          <input
-            type="email"
-            name="email"
-            value={profile.email}
-            onChange={handleChange}
-            required
-          />
-          <br />
-          <label>LinkedIn:</label>
-          <input
-            type="text"
-            name="linkedin"
-            value={profile.linkedin}
-            onChange={handleChange}
-          />
-          <br />
+            <label>Name:</label>
+            <input
+              type="text"
+              name="name"
+              value={profile.name}
+              onChange={handleChange}
+              required
+            />
+            <br />
+            <label>Role:</label>
+            <input
+              type="text"
+              name="role"
+              value={profile.role}
+              onChange={handleChange}
+            />
+            <br />
+            <label>Description:</label>
+            <textarea
+              name="description"
+              value={profile.description}
+              onChange={handleChange}
+            />
+            <br />
+            <label>Phone (required):</label>
+            <input
+              type="text"
+              name="phone"
+              value={profile.phone}
+              onChange={handleChange}
+              required
+            />
+            <br />
+            <label>Email (required):</label>
+            <input
+              type="email"
+              name="email"
+              value={profile.email}
+              onChange={handleChange}
+              required
+            />
+            <br />
+            <label>LinkedIn:</label>
+            <input
+              type="text"
+              name="linkedin"
+              value={profile.linkedin}
+              onChange={handleChange}
+            />
+            <br />
 
-          {/* Business Hours Input */}
-          <h3>Business Hours</h3>
-          <label>Sunday:</label>
-          <input
-            type="text"
-            name="sunday"
-            value={profile.businessHours.sunday}
-            onChange={handleBusinessHoursChange}
-          />
-          <br />
-          <label>Monday:</label>
-          <input
-            type="text"
-            name="monday"
-            value={profile.businessHours.monday}
-            onChange={handleBusinessHoursChange}
-          />
-          <br />
-          <label>Tuesday:</label>
-          <input
-            type="text"
-            name="tuesday"
-            value={profile.businessHours.tuesday}
-            onChange={handleBusinessHoursChange}
-          />
-          <br />
-          <label>Wednesday:</label>
-          <input
-            type="text"
-            name="wednesday"
-            value={profile.businessHours.wednesday}
-            onChange={handleBusinessHoursChange}
-          />
-          <br />
-          <label>Thursday:</label>
-          <input
-            type="text"
-            name="thursday"
-            value={profile.businessHours.thursday}
-            onChange={handleBusinessHoursChange}
-          />
-          <br />
-          <label>Friday:</label>
-          <input
-            type="text"
-            name="friday"
-            value={profile.businessHours.friday}
-            onChange={handleBusinessHoursChange}
-          />
-          <br />
-          <label>Saturday:</label>
-          <input
-            type="text"
-            name="saturday"
-            value={profile.businessHours.saturday}
-            onChange={handleBusinessHoursChange}
-          />
-          <br />
+            {/* Business Hours Input */}
+            <h3>Business Hours</h3>
+            <label>Sunday:</label>
+            <input
+              type="text"
+              name="sunday"
+              value={profile.businessHours.sunday}
+              onChange={handleBusinessHoursChange}
+            />
+            <br />
+            <label>Monday:</label>
+            <input
+              type="text"
+              name="monday"
+              value={profile.businessHours.monday}
+              onChange={handleBusinessHoursChange}
+            />
+            <br />
+            <label>Tuesday:</label>
+            <input
+              type="text"
+              name="tuesday"
+              value={profile.businessHours.tuesday}
+              onChange={handleBusinessHoursChange}
+            />
+            <br />
+            <label>Wednesday:</label>
+            <input
+              type="text"
+              name="wednesday"
+              value={profile.businessHours.wednesday}
+              onChange={handleBusinessHoursChange}
+            />
+            <br />
+            <label>Thursday:</label>
+            <input
+              type="text"
+              name="thursday"
+              value={profile.businessHours.thursday}
+              onChange={handleBusinessHoursChange}
+            />
+            <br />
+            <label>Friday:</label>
+            <input
+              type="text"
+              name="friday"
+              value={profile.businessHours.friday}
+              onChange={handleBusinessHoursChange}
+            />
+            <br />
+            <label>Saturday:</label>
+            <input
+              type="text"
+              name="saturday"
+              value={profile.businessHours.saturday}
+              onChange={handleBusinessHoursChange}
+            />
+            <br />
 
-          <button className="save-btn" onClick={handleInsert}>
-            Save Profile
-          </button>
+            <button className="save-btn" type="submit">
+              Save Profile
+            </button>
+          </form>
         </>
       )}
     </div>
   );
 };
 
-export default App;
-
-
+export default UserProfile;
