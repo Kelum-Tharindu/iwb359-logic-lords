@@ -5,7 +5,7 @@
     text-decoration: none;
 }
     
-.container{
+.containersidebar{
     display:flex;
     margin-top: 0;
     position: fixed;
@@ -25,6 +25,7 @@
     width: 200px;
     transition: all 0.5s;
     overflow: auto;
+    
    
 }
 .top_section{
