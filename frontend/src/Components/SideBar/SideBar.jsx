@@ -19,7 +19,7 @@ const Sidebar = ({ children }) => {
 
     const menuItem = [
         { path: "/", name: "Dashboard", icon: <FaTh /> },
-        { path: "/view-business-card", name: "Profile", icon: <FaUserAlt /> },
+        { path: "/dashboard", name: "Profile", icon: <FaUserAlt /> },
         { path: "/view-business-card", name: "Search", icon: <FaSearch /> },
         { path: "/create-business-card", name: "Create Card", icon: <FaShoppingBag /> },
         { path: "/about", name: "About", icon: <FaThList /> },
