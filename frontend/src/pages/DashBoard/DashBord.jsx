@@ -15,7 +15,7 @@ const DashBord = ({ name, title, company, email, phone }) => {
     return (
         <>
             
-            {/* <div className='Dashcotainer'>
+            <div className='Dashcotainer'>
             {businessCards.map((card, index) => (
                     <div key={index} className="business-card">
                         <div className="business-card-header">
@@ -30,7 +30,7 @@ const DashBord = ({ name, title, company, email, phone }) => {
                     </div>
                 ))}
             </div>
-            <Footer /> */}
+            {/* <Footer /> */}
         </>
     )
 }

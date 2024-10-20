@@ -4,17 +4,16 @@
     /* justify-content: center; */
     flex-wrap: wrap;
     align-items: center;
+    margin-left: 60px;
+    
     /* add gap between items */
-   
-    margin-top: 0;
-    margin: 60px;
-    /* background-color: rgb(179, 179, 80); */
+  
 }
 .business-card {
     display: flex;
     flex-direction: column;
     width: 300px;
-    
+    margin: 10px;
     padding: 20px;
     background-color: #f4f4f4;
     border: 1px solid #ccc;
