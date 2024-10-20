@@ -1,0 +1,10 @@
+.LandingContener{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #b83939;
+    border-color: black;
+    margin-left: 50px;
+    
+}
