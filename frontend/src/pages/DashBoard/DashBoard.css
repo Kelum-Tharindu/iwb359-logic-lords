@@ -1,9 +1,52 @@
 
 .Dashcotainer{
     display: flex;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    align-items: center;
+    /* add gap between items */
+   
     margin-top: 0;
-    left: 500px;
-    position: relative;
     margin: 60px;
-    background-color: rgb(179, 179, 80);
+    /* background-color: rgb(179, 179, 80); */
 }
+.business-card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .business-card-header {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .business-card-header h2 {
+    margin: 0;
+    font-size: 1.5em;
+  }
+  
+  .business-card-header h4 {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+    color: #555;
+  }
+  
+  .business-card-body p {
+    margin: 5px 10px;
+    margin-bottom: 15px;
+  }
+  
+  .business-card-body strong {
+    font-weight: bold;
+  }
+  
