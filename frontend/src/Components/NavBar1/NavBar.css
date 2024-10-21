@@ -1,11 +1,11 @@
 .active{
-    background-color: #cfd0d4;
+    background-color: #f4f8ff;
 }
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
+    background-color: #f4f8ff;
     position: sticky;
     top: 0;
     list-style: none;
@@ -13,23 +13,20 @@ nav{
     height: 5rem;
     padding: 0 1rem;
     margin-bottom: 1rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     padding-bottom: 2rem;
     margin-bottom: 0;
 
-    
-    /* color: white;
-    font-size: 20px;
-    font-weight: bold;
-    height: 60px; */
 }
 .title{
-    display: flex;
+display: flex;
 font-size: 1.5rem;
 margin: 1rem;
 font-weight: bold;
 text-decoration: none;
-color: black;
+color: #454661;
+padding-top: 0.5rem;
+height: 4rem;
 
 
 }
@@ -37,6 +34,7 @@ color: black;
     width: 6rem;
     height: 4rem;
     margin-right: 0.5rem;
+    padding-top: 1rem;
 }
 .title h1{
     margin: 0.5rem;
@@ -44,34 +42,38 @@ color: black;
 }
 nav ul{
     display: flex;
+    margin-top: 2.0rem;
+    background-color: #f4f8ff;
+
 }
 .open{
     display: flex;
 }
 nav ul li{
     list-style: none;
-    margin: 1rem;
-    font-size: 1.75rem;
-    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: #f4f8ff;
     
 
 }
 nav ul li a{
     display: block;
     text-decoration: none;
-    color: black;
-    padding: 1.5rem;
+    color: #fe300b;
+    padding : 1rem 3rem;
     margin: 0.05rem;
-    border-radius: 0.5rem;
-    margin-top: 2rem;
+    border-radius: 18px;
+    background-color: #f4f8ff;
+
 }
 nav ul li a:not(active):hover{
     background-color: #eceaea ;
+    text-decoration: none;
+    color: #a86514b6;
 }
 
 nav .menu{
     display: none;
-    /* display: flex; */
     position: absolute;
     top: 0.75rem;
     right: 0.75rem;
@@ -81,7 +83,6 @@ nav .menu{
     height: 2rem;
     cursor: pointer;
     margin-top: 1rem;
-    /* background-color: #b1b5c3; */
 
 }
 nav .menu span{
