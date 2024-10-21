@@ -1,5 +1,5 @@
 import react from 'react';
-// import Footer from '../../Components/Footer/Footer';
+import Footer from '../../Components/Footer/Footer';
 import './DashBoard.css'
 
 const DashBord = ({ name, title, company, email, phone }) => {
@@ -30,7 +30,7 @@ const DashBord = ({ name, title, company, email, phone }) => {
                     </div>
                 ))}
             </div>
-            {/* <Footer /> */}
+            <Footer />
         </>
     )
 }

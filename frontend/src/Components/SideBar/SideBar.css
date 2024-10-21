@@ -19,12 +19,13 @@
   
 }
 .sidebar{
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    color: #030303;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    color: #de6600;
     height: 100vh;
     width: 200px;
     transition: all 0.5s;
     overflow: auto;
+    background-color: #f4f8ff;
     
    
 }
@@ -43,7 +44,7 @@
 }
 .link{
     display: flex;
-    color: #050505;
+    color: #de6600;
     padding: 10px 15px;
     gap: 20px;
     margin-bottom: 2rem;
@@ -51,7 +52,7 @@
 }
 .link:hover{
     background:rgb(242, 250, 255);
-    color: #000;
+    color: #a86514b6;
     transition: all 0.5s;
 }
 .active{
