@@ -1,10 +1,18 @@
 import React from 'react'
+import './LandingPage.css';
+// import {NavBar} from '../../Components/NavBar1/NavBar';
+// import NavBar from '../../Components/NavBar1/NavBar';
+
 
 function LandingPage() {
     return (
-        <div>
-            <h1>Welcome to the Landing Page</h1>
-        </div>
+        <>
+            {/* < NavBar /> */}
+            <div className='LandingContener'>
+                <h1>Welcome to the Landing Page</h1>
+            </div>
+        </>
+       
     )
 }
 
